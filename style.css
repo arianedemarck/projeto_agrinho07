@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e6f40;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #8bc34a;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    font-weight: 300;
+    color: #ccff90;
+}
+
+/* Área de Busca */
+.busca-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.busca-container h2 {
+    color: #2e6f40;
+    margin-bottom: 15px;
+}
+
+.filtros {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.campo select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.campo select:focus {
+    border-color: #2e6f40;
+    outline: none;
+}
+
+.campo select:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+/* Resultados */
+.resultado-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 6px solid #8bc34a;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.resultado-container h3 {
+    color: #2e6f40;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.resultado-container h4 {
+    color: #e65100;
+    margin: 15px 0 5px 0;
+}
+
+.resultado-container ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte: Guia de Pragas e Soluções Biológicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AgroForte <span>Futuro Sustentável</span></h1>
+            <p>Guia Prático de Manejo e Controle Biológico</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="busca-container">
+            <h2>Encontre a Solução Biológica ideal</h2>
+            <p>Selecione a cultura e a praga para ver o método de controle recomendado.</p>
+            
+            <div class="filtros">
+                <div class="campo">
+                    <label for="cultura">Cultura:</label>
+                    <select id="cultura">
+                        <option value="">Selecione a cultura...</option>
+                        <option value="soja">Soja</option>
+                        <option value="milho">Milho</option>
+                        <option value="tomate">Tomate</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="praga">Praga:</label>
+                    <select id="praga" disabled>
+                        <option value="">Selecione a praga...</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="resultado" class="resultado-container hidden">
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgroForte Futuro Sustentável. Projeto Escolar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
