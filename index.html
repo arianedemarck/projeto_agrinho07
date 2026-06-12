@@ -1,57 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroForte: Guia de Pragas e Soluções Biológicas</title>
+    <title>EcoAgro - Manejo Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>AgroForte <span>Futuro Sustentável</span></h1>
-            <p>Guia Prático de Manejo e Controle Biológico</p>
-        </div>
-    </header>
 
-    <main class="container">
-        <section class="busca-container">
-            <h2>Encontre a Solução Biológica ideal</h2>
-            <p>Selecione a cultura e a praga para ver o método de controle recomendado.</p>
-            
-            <div class="filtros">
-                <div class="campo">
-                    <label for="cultura">Cultura:</label>
-                    <select id="cultura">
-                        <option value="">Selecione a cultura...</option>
-                        <option value="soja">Soja</option>
-                        <option value="milho">Milho</option>
-                        <option value="tomate">Tomate</option>
-                    </select>
-                </div>
+    <div class="container">
+        <header>
+            <h1> 👨‍🌾Agro Forte e Futuro Sustentável</h1>
+            <p>Guia de Defensivos Agrícolas com Preservação Ambiental</p>
+        </header>
 
-                <div class="campo">
-                    <div class="praga">
-                        <label for="praga">Praga:</label>
-                        <select id="cultura">
-                            <option value="Selecione a Praga...">Selecione a Praga...</option>
-                            <option value="Lagarta-do-cartucho">Lagarta-do-cartucho</option>
-                            <option value="Pulgões">Pulgões </option>
-                            <option value="Mosca-branca">Mosca-branca</option>
-                        </select>
-                    
-                </div>
+        <main>
+            <div class="form-group">
+                <label for="cultura">1. Escolha a Cultura:</label>
+                <select id="cultura">
+                    <option value="">Selecione...</option>
+                    <option value="soja">Soja</option>
+                    <option value="milho">Milho</option>
+                    <option value="trigo">Trigo</option>
+                </select>
             </div>
-        </section>
 
-        <section id="resultado" class="resultado-container hidden">
-            </section>
-    </main>
+            <div class="form-group">
+                <label for="cenario">2. Qual o desafio atual na lavoura?</label>
+                <select id="cenario" disabled>
+                    <option value="">Selecione a cultura primeiro...</option>
+                </select>
+            </div>
 
-    <footer>
-        <p>&copy; 2026 AgroForte Futuro Sustentável. Projeto Escolar.</p>
-    </footer>
+            <div id="resultado" class="card hidden">
+                </div>
+        </main>
+
+        <footer>
+            <p>Pratique o Manejo Integrado de Pragas (MIP) para proteger a biodiversidade.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
