@@ -1,17 +1,17 @@
-// Banco de dados simulado de culturas, pragas e soluç?es biol?gicas
+// Banco de dados simulado de culturas, pragas e soluï¿½?es biol?gicas
 const dadosAgro = {
     soja: {
         nome: "Soja",
         pragas: {
             lagarta_da_soja: {
                 nome: "Lagarta-da-soja (Anticarsia gemmatalis)",
-                solucao: "Uso do v?rus <strong>Baculovirus anticarsia</strong> ou liberaç?o da vespinha <strong>Trichogramma pretiosum</strong>, que ataca os ovos da lagarta.",
+                solucao: "Uso do v?rus <strong>Baculovirus anticarsia</strong> ou liberaï¿½?o da vespinha <strong>Trichogramma pretiosum</strong>, que ataca os ovos da lagarta.",
                 vantagens: "N?o afeta polinizadores e reduz a necessidade de inseticidas qu?micos."
             },
             percevejo_marrom: {
                 nome: "Percevejo-marrom (Euschistus heros)",
-                solucao: "Liberaç?o do parasitoide de ovos <strong>Telenomus podisi</strong> (uma microvespa que impede o nascimento de novos percevejos).",
-                vantagens: "Controle focado na fase inicial de reproduç?o da praga."
+                solucao: "Liberaï¿½?o do parasitoide de ovos <strong>Telenomus podisi</strong> (uma microvespa que impede o nascimento de novos percevejos).",
+                vantagens: "Controle focado na fase inicial de reproduï¿½?o da praga."
             }
         }
     },
@@ -20,12 +20,12 @@ const dadosAgro = {
         pragas: {
             lagarta_do_cartucho: {
                 nome: "Lagarta-do-cartucho (Spodoptera frugiperda)",
-                solucao: "Aplicaç?o do bioinseticida à base da bactéria <strong>Bacillus thuringiensis (Bt)</strong> ou uso do fungo <strong>Beauveria bassiana</strong>.",
-                vantagens: "Alta eficiência e preservaç?o dos inimigos naturais da praga."
+                solucao: "Aplicaï¿½?o do bioinseticida ï¿½ base da bactï¿½ria <strong>Bacillus thuringiensis (Bt)</strong> ou uso do fungo <strong>Beauveria bassiana</strong>.",
+                vantagens: "Alta eficiï¿½ncia e preservaï¿½?o dos inimigos naturais da praga."
             },
             cigarrinha_do_milho: {
                 nome: "Cigarrinha-do-milho (Dalbulus maidis)",
-                solucao: "Utilizaç?o combinada dos fungos <strong>Beauveria bassiana</strong> e <strong>Isaria fumosorosea</strong>, que infectam e eliminam o inseto.",
+                solucao: "Utilizaï¿½?o combinada dos fungos <strong>Beauveria bassiana</strong> e <strong>Isaria fumosorosea</strong>, que infectam e eliminam o inseto.",
                 vantagens: "Reduz drasticamente a transmiss?o do enfezamento do milho."
             }
         }
@@ -33,21 +33,21 @@ const dadosAgro = {
     tomate: {
         nome: "Tomate",
         pragas: {
-            traça_do_tomateiro: {
-                nome: "Traça-do-tomateiro (Tuta absoluta)",
-                solucao: "Instalaç?o de armadilhas de feromônio para monitoramento e liberaç?o da vespa predadora <strong>Trichogramma pretiosum</strong>.",
-                vantagens: "Evita furos nos frutos e mantém a qualidade comercial do tomate."
+            traa_do_tomateiro: {
+                nome: "Traï¿½a-do-tomateiro (Tuta absoluta)",
+                solucao: "Instalaï¿½?o de armadilhas de feromï¿½nio para monitoramento e liberaï¿½?o da vespa predadora <strong>Trichogramma pretiosum</strong>.",
+                vantagens: "Evita furos nos frutos e mantï¿½m a qualidade comercial do tomate."
             }
         }
     }
 };
 
-// Seleç?o dos elementos do HTML
+// Seleï¿½?o dos elementos do HTML
 const selectCultura = document.getElementById('cultura');
 const selectPraga = document.getElementById('praga');
 const divResultado = document.getElementById('resultado');
 
-// Evento quando a cultura é alterada
+// Evento quando a cultura ï¿½ alterada
 selectCultura.addEventListener('change', function() {
     const culturaSelecionada = this.value;
     
@@ -73,7 +73,7 @@ selectCultura.addEventListener('change', function() {
     }
 });
 
-// Evento quando a praga é alterada
+// Evento quando a praga ï¿½ alterada
 selectPraga.addEventListener('change', function() {
     const culturaSelecionada = selectCultura.value;
     const pragaSelecionada = this.value;
@@ -83,9 +83,9 @@ selectPraga.addEventListener('change', function() {
         
         // Monta o HTML do resultado
         divResultado.innerHTML = `
-            <h3>Soluç?o Sustent?vel Encontrada</h3>
+            <h3>Soluï¿½?o Sustent?vel Encontrada</h3>
             <p><strong>Alvo:</strong> ${infoPraga.nome}</p>
-            <h4>Método de Controle Biol?gico:</h4>
+            <h4>Mï¿½todo de Controle Biol?gico:</h4>
             <p>${infoPraga.solucao}</p>
             <h4>Vantagens para o Ecossistema:</h4>
             <p>${infoPraga.vantagens}</p>
